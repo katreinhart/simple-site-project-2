@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 80px auto auto 40px;
+  grid-template-columns: 12/auto;
+  font-size: 16px;
+}
+
+nav {
+  grid-row: 1;
+  grid-column: 1/13;
+  background-color: #BADA55;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu-item {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+}
