@@ -34,9 +34,11 @@ nav {
 
 a {
   text-decoration: none;
+  font-weight: 400;
+  color: #666;
 }
 
-nav a:hover {
+nav a:hover, a:hover {
   color: pink;
 }
 
@@ -54,6 +56,7 @@ nav a:hover {
 .tagline {
   clear: left;
   font-size: 0.7rem;
+  font-weight: 200;
   color: white;
   padding: 0
 }
@@ -68,7 +71,7 @@ nav a:hover {
 
 .menu-item {
   display: inline;
-  padding-left: 10px;
+  padding-left: 15px;
   font-size: 1.05rem;
   font-weight: 200;
 }
@@ -90,12 +93,16 @@ nav a:hover {
 
 .hero-right {
   float: right;
+  width: 66%;
+
 }
 
 .main {
   float: left;
-  background-color: white;
-  padding-top: 30px;
+  background-color: #eee;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px dotted pink;
 }
 
 .col {
@@ -112,4 +119,38 @@ footer {
   font-size: 0.7rem;
   font-weight: 200;
   padding: 10px;
+}
+
+@media (max-width: 945px) {
+  body {
+    font-size: 1.2rem;
+  }
+  .hide-md {
+    display: none;
+  }
+  .brand {
+    float: none;
+    text-align: center;
+  }
+  .hero-left {
+    display: none;
+  }
+  .hero-right {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero-right img {
+    width: 100%
+  }
+}
+
+@media (max-width: 688px) {
+  .col {
+    clear: both;
+    width: 95%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
 }
