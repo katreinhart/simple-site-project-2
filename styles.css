@@ -13,10 +13,18 @@ p {
   font-weight: 200;
 }
 
+h1 a{
+  font-family: "Pacifico", cursive;
+  color: pink;
+  font-size: 2.2rem;
+  margin: 0;
+}
+
 h3 {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 15px;
+  color: #666;
 }
 
 nav {
@@ -24,10 +32,12 @@ nav {
   height: 90px;
 }
 
-nav a {
+a {
   text-decoration: none;
-  font-size: 1rem;
-  color: #ddd;
+}
+
+nav a:hover {
+  color: pink;
 }
 
 .container {
@@ -38,31 +48,38 @@ nav a {
 
 .brand {
   float: left;
-  margin: 12px 0 0 60px;
-  font-size: 2rem;
+  margin: 8px 0 0 60px;
 }
 
 .tagline {
+  clear: left;
   font-size: 0.7rem;
   color: white;
-  margin-left: 60px;
   padding: 0
 }
 
 .menu {
   list-style: none;
   float: right;
-  margin: 20px 80px ;
-  border: 1px solid pink;
+  margin: 20px 60px ;
+  border: 1px dotted pink;
   padding: 10px;
 }
 
 .menu-item {
   display: inline;
+  padding-left: 10px;
+  font-size: 1.05rem;
+  font-weight: 200;
+}
+
+.menu-item a {
+  color: #ddd;
 }
 
 .hero {
   background-color: #fff;
+  padding-top: 15px;
 }
 
 .hero-left {
@@ -78,12 +95,14 @@ nav a {
 .main {
   float: left;
   background-color: white;
+  padding-top: 30px;
 }
 
 .col {
   float: left;
   margin: 10px;
   width: 30%;
+  padding: 10px;
 }
 
 footer {
